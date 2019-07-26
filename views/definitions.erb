@@ -11,3 +11,15 @@
   <%else%>
     <p>No definitions to display</p>
   <% end %>
+
+  <h2>Create a new definition</h2>
+
+<form action=<%= "/definitions/#{@word_id}/messages" %> method="post">
+  <div class="form-group">
+    <label for="word"></label>
+    <input name="word" class="form-control small" type="text">
+    <label for="definition">Definition text</label>
+    <input name="definition" class="form-control big" type="text">
+  </div>
+  <button type="submit" class="btn">Go!</button>
+</form>

@@ -14,19 +14,19 @@ class Word
     @@words.values()
   end
 
-  def ==(word)
-    self.word() == word.word()
+  def self.clear
+    @@words = {}
+    @@next_id = 0
   end
 
   def save
     @@words[self.id] =  Word.new(self.word, self.id)
   end
 
-  def self.clear
-    @@words = {}
-    @@next_id = 0
-  end
 
+  def ==(word)
+    self.word() == word.word()
+  end
 
 end
 

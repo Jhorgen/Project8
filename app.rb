@@ -8,3 +8,10 @@ get ('/') do
   @words = Word.all
   erb(:words)
 end
+
+get ('/words') do
+  @boards = Board.all
+  erb(:words)
+  end
+
+  
