@@ -14,4 +14,6 @@ get ('/words') do
   erb(:words)
   end
 
-  
+  post '/definitions' do
+    "Hello World"
+  end
