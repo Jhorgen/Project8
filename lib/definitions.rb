@@ -28,31 +28,4 @@ class Definition
     @definition == example_def.definition && @word_id == example_def.word_id &&  @id == example_def.id
   end
 
-
-
-
-
-
 end
-
-
-# def self.clear
-#   @@messages = {}
-#   @@next_id = 0
-# end
-#
-# def self.find(id)
-#   @@messages[id]
-# end
-#
-# def self.find_by_board(board_id)
-#   @@messages.values.select { |message| message.board_id == board_id }
-# end
-#
-# def save
-#   @@messages[self.id] =  Message.new(self.message, self.user, self.board_id, self.id)
-# end
-#
-# def ==(other_message)
-#   @message == other_message.message && @board_id == other_message.board_id && @user == other_message.user && @id == other_message.id
-# end
